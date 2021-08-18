@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 
+font-family: 'Montserrat', sans-serif;
+---------------------------------------
+100-900 font weight
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(24deg, rgb(130, 130, 206), rgb(224, 175, 85));
+    height: 100vh;
+}
+
+.wraper {
+    margin: 120px auto;
+    max-width: 400px;
+    width: 100%;
+    /* border-radius: 10px; */
+
+    background-color: #ffffff;
+    padding: 25px;
+    /* border: 2px solid black; */
+    box-shadow: -10px 22px 6px 2px rgba(0, 0, 0, 0.16);
+}
+
+.wraper header {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+}
+
+.wraper .inputField {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin-bottom: 25px;
+
+
+}
+
+.wraper .inputField input {
+    width: 85%;
+    border: 1px solid black;
+    font-size: 17px;
+    padding-left: 15px;
+    border-radius: 0;
+
+
+}
+
+.wraper .inputField button {
+    width: 15%;
+    border: none;
+    outline: none;
+    background-color: purple;
+    color: #ffffff;
+    margin-left: 10px;
+    font-weight: 900;
+    opacity: 0.8;
+    pointer-events: none;
+    cursor: pointer;
+
+
+}.wraper .inputField button.active {
+   pointer-events: auto;
+    opacity: 1;
+
+
+}
+
+.wraper .todoList {
+    max-height: 250px;
+    overflow: auto;
+}
+
+.wraper .todoList li {
+  
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background-color: rgba(145, 139, 139, 0.16);
+    margin-bottom: 5px;
+    padding: 0 10px;
+
+}
+
+.wraper .todoList li span {
+
+    position: absolute;
+    /* right: -15px; */
+    right: 0px;
+
+    background-color: rgb(160, 10, 10);
+    padding: 0 10px;
+    /* overflow: hidden; */
+    /* visibility: hidden; */
+   color: #ffffff;
+   cursor: pointer;
+}
+.wraper .todoList li:hover span {
+
+    position: absolute;
+    right: 0px;
+    color: #ffffff;
+/* visibility: visible; */
+    padding: 0 10px;
+    /* transition:  all 0.5s ease; */
+   
+}
+
+
+.wraper footer {
+display: flex;
+justify-content: space-between;
+margin-top: 10px;
+
+   
+}.wraper footer span {
+
+    font-size: 15px;
+    font-weight:600;
+    text-align: center;
+    margin: auto 0px;
+
+   
+}.wraper footer button {
+
+    
+    border: none;
+    outline: none;
+    background-color: purple;
+    color: #ffffff;
+    margin-left: 10px;
+    height: 45px;
+    padding: 10px;
+    font-weight: 900;   cursor: pointer;
+   
+}
