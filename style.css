@@ -68,7 +68,8 @@ body {
     cursor: pointer;
 
 
-}.wraper .inputField button.active {
+}
+.wraper .inputField button.active {
    pointer-events: auto;
     opacity: 1;
 
